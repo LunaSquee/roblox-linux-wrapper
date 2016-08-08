@@ -91,7 +91,7 @@ roblox-install () {
 			# Make sure our directories really exist
 			mkdir -p "$HOME/.local/share/wineprefixes"
 			rwineboot
-			rwinetricks vcrun2013 ddr=gdi sound=alsa
+			rwinetricks vcrun2013 ddr=opengl sound=alsa
 				# ddr=gdi:	Vastly improves performance, may cause graphical problems in mutter/gala
 				# sound=alsa:	Fix for crackling sound under Ubuntu 14.04
 			[[ "$?" = 0 ]] || {
